@@ -1,0 +1,28 @@
+{
+  "name": "git-webhooks",
+  "version": "1.0.0",
+  "description": "Git Webhooks practice",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/db001/git-webhooks.git"
+  },
+  "author": "db",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/db001/git-webhooks/issues"
+  },
+  "homepage": "https://github.com/db001/git-webhooks#readme"
+}
