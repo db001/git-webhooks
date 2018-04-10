@@ -5,4 +5,8 @@ router.get('/', (req, res) => {
   res.render('index');
 });
 
+router.get('/payload', (req, res) => {
+  console.log(req.body);
+})
+
 module.exports = router;

@@ -10,6 +10,7 @@ const app = express();
 require('dotenv').config();
 
 const secret = process.env.WEBHOOK_SECRET;
+const payloadURL = process.env.PAYLOAD_URL
 
 app.set('views', path.join(__dirname, 'views')); // Folder containing pug files
 app.set('view engine', 'pug');
