@@ -6,12 +6,16 @@ router.get('/', (req, res) => {
 });
 
 router.post('/payload', (req, res) => {
-  const pushData = req.body.head_commit;
-  if(pushData) {
-    res.sendStatus(200);
-  } else {
-    res.sendStatus(400);
-  }  
+  // if(req) { res.sendStatus(200) };
+  const pushData = req.body;
+  res.render('payload', {
+    data: pushData
+  });
+  // if(pushData) {
+  //   res.sendStatus(200);
+  // } else {
+  //   res.sendStatus(400);
+  // }  
 });
 
 module.exports = router;
