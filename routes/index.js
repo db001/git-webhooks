@@ -5,17 +5,14 @@ router.get('/', (req, res) => {
   res.render('index');
 });
 
-router.post('/payload', (req, res) => {
-  // if(req) { res.sendStatus(200) };
+router.post('/payload', (req, res, next) => {
   const pushData = req.body;
-  res.render('payload', {
-    data: pushData
-  });
-  // if(pushData) {
-  //   res.sendStatus(200);
-  // } else {
-  //   res.sendStatus(400);
-  // }  
+  console.log(req.body.commits);
+  if(pushData) {
+    res.render('payload', {
+      data: pushData
+    });
+  }
 });
 
 module.exports = router;
