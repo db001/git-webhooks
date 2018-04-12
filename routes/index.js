@@ -8,8 +8,8 @@ router.get('/', (req, res) => {
 });
 
 router.post('/payload', (req, res, next) => {
-  hookController.getWebhookData,
-  hookController.renderData
+  hookController.getWebhookData
+  // hookController.renderData
 });
 
 module.exports = router;

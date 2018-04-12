@@ -1,6 +1,9 @@
 exports.getWebhookData = (req, res, next) => {
   const pushData = req.body;
-  next();
+  res.render('payload', {
+    data: pushData
+  });
+  // next();
 }
 
 exports.renderData = (req, res) => {
