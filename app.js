@@ -15,7 +15,7 @@ const payloadURL = process.env.PAYLOAD_URL
 app.set('views', path.join(__dirname, 'views')); // Folder containing pug files
 app.set('view engine', 'pug');
 
-// Takes the raw requests and turns them into usable properties on req.body
+// Takes raw requests and turns them into usable properties on req.body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

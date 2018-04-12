@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-// const hookController = require('../controllers/hookController');
-
 router.get('/', (req, res) => {
   res.render('index');
 });
