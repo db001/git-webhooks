@@ -4,6 +4,8 @@
   "description": "Git Webhooks practice",
   "main": "index.js",
   "dependencies": {
+    "@slack/client": "^4.2.0",
+    "bl": "^1.2.2",
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
