@@ -26,7 +26,9 @@ router.post('/payload', (req, res) => {
   res.send('OK');
   console.log('Webhook received');
   pushData = JSON.stringify(req.body);
-  rtm.sendMessage(`${pushData}`, channel)
+  rtm.sendMessage(`
+    A commit has been made by ${pushData.head_commit.author.name}
+  `, channel)
     .then(console.log(`Message sent to channel ${channel}`));
 });
 
