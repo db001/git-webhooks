@@ -17,13 +17,19 @@ const web = new WebClient(token);
 let channel = 'C9V4AJQT0';
 
 router.post('/payload', (req, res) => {
-  res.send('OK');
-  // console.log('Webhook received');
-  // console.log(req.body);
-  rtm.sendMessage(`
-    ${req.body.head_commit.author.username} has pushed to ${req.body.repository.full_name}\nwith the commit message ${JSON.stringify(req.body.head_commit.message)}\nKeep on coding!
-  `, channel)
-    .then(console.log(`Message sent to channel ${channel}`));
+    res.send('OK');
+    // console.log('Webhook received');
+    const data = JSON.parse(req.body.payload);
+    console.log(data.head_commit);
+    rtm.sendMessage(
+        `${data.head_commit.author.username} has pushed to ${
+            data.repository.full_name
+        }\nwith the commit message ${JSON.stringify(
+            data.head_commit.message
+        )}\nKeep on coding!
+        `,
+        channel
+    ).then(console.log(`Message sent to channel ${channel}`));
 });
 
 module.exports = router;

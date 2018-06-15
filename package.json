@@ -1,31 +1,31 @@
 {
-  "name": "git-webhooks",
-  "version": "1.0.0",
-  "description": "Git Webhooks practice",
-  "main": "index.js",
-  "dependencies": {
-    "@slack/client": "^4.2.0",
-    "bl": "^1.2.2",
-    "body-parser": "^1.18.2",
-    "dotenv": "^5.0.1",
-    "express": "^4.16.3",
-    "nodemon": "^1.17.3",
-    "pug": "^2.0.3",
-    "request": "^2.85.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/db001/git-webhooks.git"
-  },
-  "author": "db",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/db001/git-webhooks/issues"
-  },
-  "homepage": "https://github.com/db001/git-webhooks#readme"
+    "name": "git-webhooks",
+    "version": "1.0.0",
+    "description": "Git Webhooks practice",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "@slack/client": "^4.2.0",
+        "bl": "^1.2.2",
+        "body-parser": "^1.18.2",
+        "dotenv": "^5.0.1",
+        "express": "^4.16.3",
+        "nodemon": "^1.17.5",
+        "pug": "^2.0.3",
+        "request": "^2.85.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/db001/git-webhooks.git"
+    },
+    "author": "db",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/db001/git-webhooks/issues"
+    },
+    "homepage": "https://github.com/db001/git-webhooks#readme"
 }
