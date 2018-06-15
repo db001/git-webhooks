@@ -20,7 +20,7 @@ router.post('/payload', (req, res) => {
     res.send('OK');
     // console.log('Webhook received');
     const data = JSON.parse(req.body.payload);
-    console.log(data.head_commit);
+    // console.log(data.head_commit);
     rtm.sendMessage(
         `${data.head_commit.author.username} has pushed to ${
             data.repository.full_name
